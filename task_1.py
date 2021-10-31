@@ -43,4 +43,3 @@ while action != 0:
         break
     if res != None:
         print(f'\n\tРезультат: {op1} {action} {op2} = {round(res,3)}\n')
-
