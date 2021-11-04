@@ -9,19 +9,19 @@ stop_2 = 9
 
 span = [[i, 0] for i in range(start_, stop_ + 1)]
 dev_span = [i for i in range(start_, stop_2 + 1)]
-#print(span)
-#print(dev_span)
+# print(span)
+# print(dev_span)
 
 count = 0
 for i in range(len(span)):
     for j in range(len(dev_span)):
         if (span[i][0] % dev_span[j]) == 0:
-            #print(f'{span[i][0]} кратно числу {dev_span[j]}')
+            # print(f'{span[i][0]} кратно числу {dev_span[j]}')
             count += 1
         else:
             continue
     span[i][1] = count
-    #print(f'количество кратных чисел = {count}')
+    # print(f'количество кратных чисел = {count}')
     count = 0
 
 for i in range(len(span)):
