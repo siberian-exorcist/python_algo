@@ -13,7 +13,7 @@ print(matrix_)
 for i in range(n):
     for j in range(m-1):
        matrix_[i][j] = (int(input(f'Введите символы {i+1} строки: ')))
-print(f'Начальная матрица 5x4:\n{matrix_}\n')
+print(f'Начальная матрица {n}x{m}:\n{matrix_}\n')
 
 for i in range(n):
     for j in range(m-1):
