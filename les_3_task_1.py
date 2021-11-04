@@ -25,4 +25,4 @@ for i in range(len(span)):
     count = 0
 
 for i in range(len(span)):
-    print(f'число {span[i][0]} кратно - \t{span[i][1]} раз')
+    print(f'число {span[i][0]} кратно - \t{span[i][1]} раз(а)')
