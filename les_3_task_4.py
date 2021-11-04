@@ -9,7 +9,7 @@ m = 4
 summ_ = 0
 
 matrix_ = [[0] * m for i in range(n)]
-print(matrix_)
+# print(matrix_)
 for i in range(n):
     for j in range(m-1):
        matrix_[i][j] = (int(input(f'Введите символы {i+1} строки: ')))
