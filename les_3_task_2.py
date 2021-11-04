@@ -5,6 +5,17 @@
 (индексация начинается с нуля), т.к. именно в этих позициях первого массива стоят четные числа.
 """
 
-start_ = 0
-stop_ = 10
 
+from random import randint
+
+
+start_ = 0
+stop_ = 30
+even = []
+
+span = [randint(start_, stop_) for _ in range(start_, stop_)]
+print(f'Начальный список: \n {span}\n')
+for i in range(len(span)):
+    if span[i] % 2 == 0:
+        even.append(i)
+print(f'Список с номерами четных цисел из начального списка : \n{even}')
