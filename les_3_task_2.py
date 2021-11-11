@@ -9,11 +9,13 @@
 from random import randint
 
 
-start_ = 0
-stop_ = 30
+start_ = -10000
+stop_ = 10000
+num_limit = 10
 even = []
 
-span = [randint(start_, stop_) for _ in range(start_, stop_)]
+
+span = [randint(start_, stop_) for _ in range(num_limit)]
 print(f'Начальный список: \n {span}\n')
 for i in range(len(span)):
     if span[i] % 2 == 0:
