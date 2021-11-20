@@ -14,6 +14,7 @@ n = int(input('Введите размер массива для сортиро�
 arr_ = [randint(start_, end_-1) for i in range(n)]
 print(f'Исходный массив:\n{arr_}\n')
 
+
 def buble_sort(arr):
     """
     >>> buble_sort([94, 55, 42, -50])
@@ -26,8 +27,9 @@ def buble_sort(arr):
             if arr[i] < arr[i+1]:
                 arr[i], arr[i+1] = arr[i+1], arr[i]
         j -= 1
-        k +=1
+        k += 1
     return arr
+
 
 print(f'Отсортированный по убыванию массив:\n {buble_sort(arr_)}\n')
 
