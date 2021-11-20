@@ -20,11 +20,13 @@ def buble_sort(arr):
     [94, 55, 42, -50]
     """
     j = len(arr)-1
+    k = 1
     while j > 0:
-        for i in range(len(arr)-1):
+        for i in range(len(arr)-k):
             if arr[i] < arr[i+1]:
                 arr[i], arr[i+1] = arr[i+1], arr[i]
         j -= 1
+        k +=1
     return arr
 
 print(f'Отсортированный по убыванию массив:\n {buble_sort(arr_)}\n')
